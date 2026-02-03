@@ -29,3 +29,36 @@ wheels/
 *.swo
 *~
 .DS_Store
+
+# Large model files
+*.pt
+*.pth
+*.onnx
+models/*.pt
+models/*.pth
+
+# Data files
+data/
+datasets/
+*.csv
+*.json
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# OS
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Testing
+.pytest_cache/
+htmlcov/
+
+# Virtual environments
+venv/
+env/
+ENV/

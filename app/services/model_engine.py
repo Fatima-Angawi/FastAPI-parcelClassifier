@@ -40,9 +40,9 @@ def predict(image_input):
         raise ValueError("Model did not return probability scores")
 
     probs_dict = {
-        str(model.names[i]): float(probs[i])
-        for i in range(len(probs))
-    }
+    name: float(probs[idx]) 
+    for idx, name in model.names.items()
+}
 
     return PredictionResponse(
         top_class=top_class_name,
